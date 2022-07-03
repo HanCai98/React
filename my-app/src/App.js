@@ -7,7 +7,11 @@ function App() {
   
   useEffect(() => {
       console.log(`It's ${emotion} right now`);
-    }, [emotion]);
+    }, [emotion, secondary]);
+
+  useEffect(() =>{
+    console.log(`It's ${secondary} around here!`);
+  }, [secondary])
 
   return (
     <div className="App">
